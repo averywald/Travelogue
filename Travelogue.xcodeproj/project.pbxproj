@@ -14,6 +14,12 @@
 		CC77361025757A7100BF0D14 /* Travelogue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC77360E25757A7100BF0D14 /* Travelogue.xcdatamodeld */; };
 		CC77361225757A7500BF0D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC77361125757A7500BF0D14 /* Assets.xcassets */; };
 		CC77361525757A7500BF0D14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC77361325757A7500BF0D14 /* LaunchScreen.storyboard */; };
+		CCA1B74E257F290E001DD1B7 /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B748257F290E001DD1B7 /* Trip+CoreDataClass.swift */; };
+		CCA1B74F257F290E001DD1B7 /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B749257F290E001DD1B7 /* Trip+CoreDataProperties.swift */; };
+		CCA1B750257F290E001DD1B7 /* Media+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B74A257F290E001DD1B7 /* Media+CoreDataClass.swift */; };
+		CCA1B751257F290E001DD1B7 /* Media+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B74B257F290E001DD1B7 /* Media+CoreDataProperties.swift */; };
+		CCA1B752257F290E001DD1B7 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B74C257F290E001DD1B7 /* Post+CoreDataClass.swift */; };
+		CCA1B753257F290E001DD1B7 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B74D257F290E001DD1B7 /* Post+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		CC77361125757A7500BF0D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC77361425757A7500BF0D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC77361625757A7500BF0D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA1B748257F290E001DD1B7 /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CCA1B749257F290E001DD1B7 /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CCA1B74A257F290E001DD1B7 /* Media+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Media+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CCA1B74B257F290E001DD1B7 /* Media+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Media+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CCA1B74C257F290E001DD1B7 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CCA1B74D257F290E001DD1B7 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,12 @@
 		CC77360425757A7100BF0D14 /* Travelogue */ = {
 			isa = PBXGroup;
 			children = (
+				CCA1B748257F290E001DD1B7 /* Trip+CoreDataClass.swift */,
+				CCA1B749257F290E001DD1B7 /* Trip+CoreDataProperties.swift */,
+				CCA1B74A257F290E001DD1B7 /* Media+CoreDataClass.swift */,
+				CCA1B74B257F290E001DD1B7 /* Media+CoreDataProperties.swift */,
+				CCA1B74C257F290E001DD1B7 /* Post+CoreDataClass.swift */,
+				CCA1B74D257F290E001DD1B7 /* Post+CoreDataProperties.swift */,
 				CC77360525757A7100BF0D14 /* AppDelegate.swift */,
 				CC77360725757A7100BF0D14 /* SceneDelegate.swift */,
 				CC77360925757A7100BF0D14 /* ViewController.swift */,
@@ -140,10 +158,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA1B750257F290E001DD1B7 /* Media+CoreDataClass.swift in Sources */,
+				CCA1B74F257F290E001DD1B7 /* Trip+CoreDataProperties.swift in Sources */,
 				CC77360A25757A7100BF0D14 /* ViewController.swift in Sources */,
+				CCA1B753257F290E001DD1B7 /* Post+CoreDataProperties.swift in Sources */,
 				CC77361025757A7100BF0D14 /* Travelogue.xcdatamodeld in Sources */,
+				CCA1B752257F290E001DD1B7 /* Post+CoreDataClass.swift in Sources */,
+				CCA1B751257F290E001DD1B7 /* Media+CoreDataProperties.swift in Sources */,
 				CC77360625757A7100BF0D14 /* AppDelegate.swift in Sources */,
 				CC77360825757A7100BF0D14 /* SceneDelegate.swift in Sources */,
+				CCA1B74E257F290E001DD1B7 /* Trip+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
