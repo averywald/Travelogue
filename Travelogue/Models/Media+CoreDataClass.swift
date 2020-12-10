@@ -6,13 +6,13 @@
 //
 //
 
-import Foundation
+import UIKit
 import CoreData
 
 @objc(Media)
 public class Media: NSManagedObject {
 	
-	convenience init(<#parameters#>) {
+	convenience init?(data d: Data?, metaData md: String?, uri u: URL?) {
 		// get app delegate
 		let appDelegate = UIApplication.shared.delegate as? AppDelegate
 		
@@ -21,11 +21,14 @@ public class Media: NSManagedObject {
 			return nil
 		}
 		
-		// insert into managed context
-		self.init(entity: Category.entity(), insertInto: context)
+		// insert into its respective Post's managed context
+		self.init(entity: Post.entity(), insertInto: context)
 		
-		// assign property values
-//		self.title = title
+		// assign values
+		self.data = d
+		self.metaData = md
+		self.uri = u
+		
 	}
 
 }

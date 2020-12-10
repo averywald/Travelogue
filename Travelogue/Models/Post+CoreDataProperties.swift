@@ -2,7 +2,7 @@
 //  Post+CoreDataProperties.swift
 //  Travelogue
 //
-//  Created by Avery Wald on 12/7/20.
+//  Created by Avery Wald on 12/10/20.
 //
 //
 
@@ -17,7 +17,6 @@ extension Post {
     }
 
     @NSManaged public var date: Date?
-    @NSManaged public var media: Data?
     @NSManaged public var text: String?
     @NSManaged public var postMedia: NSOrderedSet?
     @NSManaged public var postTrip: Trip?

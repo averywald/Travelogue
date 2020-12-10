@@ -6,13 +6,18 @@
 //
 //
 
-import Foundation
+import UIKit
 import CoreData
 
 @objc(Trip)
 public class Trip: NSManagedObject {
 	
-	convenience init(start s: Date?, end e: Date?, location l: string?) {
+	// posts array
+	var posts: [Post]? {
+		return self.rawPosts?.array as? [Post]
+	}
+	
+	convenience init?(start s: Date?, end e: Date?, location l: String?) {
 		// get app delegate
 		let appDelegate = UIApplication.shared.delegate as? AppDelegate
 		
@@ -22,10 +27,13 @@ public class Trip: NSManagedObject {
 		}
 		
 		// insert into managed context
-		self.init(entity: Category.entity(), insertInto: context)
+		self.init(entity: Trip.entity(), insertInto: context)
 		
-		// assign property values
-//		self.title = title
+		// assign values
+		self.startDate = s
+		self.endDate = e
+		self.location = l
+		
 	}
 
 }

@@ -6,13 +6,22 @@
 //
 //
 
-import Foundation
+import UIKit
 import CoreData
 
 @objc(Post)
 public class Post: NSManagedObject {
 	
-	convenience init(<#parameters#>) {
+	// does post need a media array?
+	var media: [Media]? {
+		return self.postMedia?.array as? [Media]
+	}
+	
+	var trip: Trip? {
+		return self.postTrip
+	}
+	
+	convenience init?(date d: Date, text t: String?) {
 		// get app delegate
 		let appDelegate = UIApplication.shared.delegate as? AppDelegate
 		
@@ -21,11 +30,13 @@ public class Post: NSManagedObject {
 			return nil
 		}
 		
-		// insert into managed context
-		self.init(entity: Category.entity(), insertInto: context)
+		// insert into respective Trip's managed context
+		self.init(entity: Trip.entity(), insertInto: context)
 		
-		// assign property values
-//		self.title = title
+		// assign values
+		self.date = d
+		self.text = t
+		
 	}
 
 }

@@ -2,7 +2,7 @@
 //  Media+CoreDataProperties.swift
 //  Travelogue
 //
-//  Created by Avery Wald on 12/7/20.
+//  Created by Avery Wald on 12/10/20.
 //
 //
 
@@ -17,7 +17,7 @@ extension Media {
     }
 
     @NSManaged public var data: Data?
-    @NSManaged public var metadata: String?
+    @NSManaged public var metaData: String?
     @NSManaged public var uri: URL?
     @NSManaged public var post: Post?
 

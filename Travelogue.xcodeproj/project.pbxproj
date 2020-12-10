@@ -7,37 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC3D0BAD2581A1100044828C /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D0BAC2581A1100044828C /* Trips.swift */; };
+		CC3D0BB42581A4030044828C /* NewTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D0BB32581A4030044828C /* NewTrip.swift */; };
 		CC77360625757A7100BF0D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77360525757A7100BF0D14 /* AppDelegate.swift */; };
 		CC77360825757A7100BF0D14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77360725757A7100BF0D14 /* SceneDelegate.swift */; };
-		CC77360A25757A7100BF0D14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77360925757A7100BF0D14 /* ViewController.swift */; };
 		CC77360D25757A7100BF0D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC77360B25757A7100BF0D14 /* Main.storyboard */; };
 		CC77361025757A7100BF0D14 /* Travelogue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC77360E25757A7100BF0D14 /* Travelogue.xcdatamodeld */; };
 		CC77361225757A7500BF0D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC77361125757A7500BF0D14 /* Assets.xcassets */; };
 		CC77361525757A7500BF0D14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC77361325757A7500BF0D14 /* LaunchScreen.storyboard */; };
-		CCA1B74E257F290E001DD1B7 /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B748257F290E001DD1B7 /* Trip+CoreDataClass.swift */; };
-		CCA1B74F257F290E001DD1B7 /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B749257F290E001DD1B7 /* Trip+CoreDataProperties.swift */; };
 		CCA1B750257F290E001DD1B7 /* Media+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B74A257F290E001DD1B7 /* Media+CoreDataClass.swift */; };
 		CCA1B751257F290E001DD1B7 /* Media+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B74B257F290E001DD1B7 /* Media+CoreDataProperties.swift */; };
 		CCA1B752257F290E001DD1B7 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B74C257F290E001DD1B7 /* Post+CoreDataClass.swift */; };
 		CCA1B753257F290E001DD1B7 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B74D257F290E001DD1B7 /* Post+CoreDataProperties.swift */; };
+		CCACED1A258276C900F0FE9A /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCACED18258276C900F0FE9A /* Trip+CoreDataClass.swift */; };
+		CCACED1B258276C900F0FE9A /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCACED19258276C900F0FE9A /* Trip+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC3D0BAC2581A1100044828C /* Trips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
+		CC3D0BB32581A4030044828C /* NewTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrip.swift; sourceTree = "<group>"; };
 		CC77360225757A7100BF0D14 /* Travelogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC77360525757A7100BF0D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC77360725757A7100BF0D14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC77360925757A7100BF0D14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC77360C25757A7100BF0D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC77360F25757A7100BF0D14 /* Travelogue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Travelogue.xcdatamodel; sourceTree = "<group>"; };
 		CC77361125757A7500BF0D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC77361425757A7500BF0D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CC77361625757A7500BF0D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCA1B748257F290E001DD1B7 /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
-		CCA1B749257F290E001DD1B7 /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CCA1B74A257F290E001DD1B7 /* Media+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Media+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CCA1B74B257F290E001DD1B7 /* Media+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Media+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CCA1B74C257F290E001DD1B7 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CCA1B74D257F290E001DD1B7 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CCACED18258276C900F0FE9A /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Trip+CoreDataClass.swift"; path = "../../Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CCACED19258276C900F0FE9A /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CCACED2325827A9700F0FE9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,11 +53,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC3D0BAB2581A0D40044828C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC3D0BB32581A4030044828C /* NewTrip.swift */,
+				CC3D0BAC2581A1100044828C /* Trips.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CC3D0BB02581A11D0044828C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CCA1B74A257F290E001DD1B7 /* Media+CoreDataClass.swift */,
+				CCA1B74B257F290E001DD1B7 /* Media+CoreDataProperties.swift */,
+				CCA1B74C257F290E001DD1B7 /* Post+CoreDataClass.swift */,
+				CCA1B74D257F290E001DD1B7 /* Post+CoreDataProperties.swift */,
+				CCACED18258276C900F0FE9A /* Trip+CoreDataClass.swift */,
+				CCACED19258276C900F0FE9A /* Trip+CoreDataProperties.swift */,
+				CC77360E25757A7100BF0D14 /* Travelogue.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CC7735F925757A7100BF0D14 = {
 			isa = PBXGroup;
 			children = (
-				CC77360425757A7100BF0D14 /* Travelogue */,
 				CC77360325757A7100BF0D14 /* Products */,
+				CC77360425757A7100BF0D14 /* Travelogue */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,22 +95,24 @@
 		CC77360425757A7100BF0D14 /* Travelogue */ = {
 			isa = PBXGroup;
 			children = (
-				CCA1B748257F290E001DD1B7 /* Trip+CoreDataClass.swift */,
-				CCA1B749257F290E001DD1B7 /* Trip+CoreDataProperties.swift */,
-				CCA1B74A257F290E001DD1B7 /* Media+CoreDataClass.swift */,
-				CCA1B74B257F290E001DD1B7 /* Media+CoreDataProperties.swift */,
-				CCA1B74C257F290E001DD1B7 /* Post+CoreDataClass.swift */,
-				CCA1B74D257F290E001DD1B7 /* Post+CoreDataProperties.swift */,
-				CC77360525757A7100BF0D14 /* AppDelegate.swift */,
-				CC77360725757A7100BF0D14 /* SceneDelegate.swift */,
-				CC77360925757A7100BF0D14 /* ViewController.swift */,
-				CC77360B25757A7100BF0D14 /* Main.storyboard */,
-				CC77361125757A7500BF0D14 /* Assets.xcassets */,
-				CC77361325757A7500BF0D14 /* LaunchScreen.storyboard */,
-				CC77361625757A7500BF0D14 /* Info.plist */,
-				CC77360E25757A7100BF0D14 /* Travelogue.xcdatamodeld */,
+				CCACED2325827A9700F0FE9A /* Info.plist */,
+				CCACED06258270FD00F0FE9A /* Views */,
+				CC3D0BAB2581A0D40044828C /* Controllers */,
+				CC3D0BB02581A11D0044828C /* Models */,
 			);
 			path = Travelogue;
+			sourceTree = "<group>";
+		};
+		CCACED06258270FD00F0FE9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC77360525757A7100BF0D14 /* AppDelegate.swift */,
+				CC77360725757A7100BF0D14 /* SceneDelegate.swift */,
+				CC77361125757A7500BF0D14 /* Assets.xcassets */,
+				CC77361325757A7500BF0D14 /* LaunchScreen.storyboard */,
+				CC77360B25757A7100BF0D14 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,16 +185,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3D0BAD2581A1100044828C /* Trips.swift in Sources */,
 				CCA1B750257F290E001DD1B7 /* Media+CoreDataClass.swift in Sources */,
-				CCA1B74F257F290E001DD1B7 /* Trip+CoreDataProperties.swift in Sources */,
-				CC77360A25757A7100BF0D14 /* ViewController.swift in Sources */,
 				CCA1B753257F290E001DD1B7 /* Post+CoreDataProperties.swift in Sources */,
 				CC77361025757A7100BF0D14 /* Travelogue.xcdatamodeld in Sources */,
 				CCA1B752257F290E001DD1B7 /* Post+CoreDataClass.swift in Sources */,
 				CCA1B751257F290E001DD1B7 /* Media+CoreDataProperties.swift in Sources */,
+				CC3D0BB42581A4030044828C /* NewTrip.swift in Sources */,
+				CCACED1B258276C900F0FE9A /* Trip+CoreDataProperties.swift in Sources */,
 				CC77360625757A7100BF0D14 /* AppDelegate.swift in Sources */,
 				CC77360825757A7100BF0D14 /* SceneDelegate.swift in Sources */,
-				CCA1B74E257F290E001DD1B7 /* Trip+CoreDataClass.swift in Sources */,
+				CCACED1A258276C900F0FE9A /* Trip+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
