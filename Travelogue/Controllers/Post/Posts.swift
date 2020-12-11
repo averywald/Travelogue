@@ -55,13 +55,13 @@ class Posts: UICollectionViewController {
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		// get the index path for the selected post's UI cell
-		guard let indexPath = (sender as? UIView)?.findCollectionViewIndexPath() else { return }
+//		guard let indexPath = (sender as? UIView)?.findCollectionViewIndexPath() else { return }
 		// set the destination scene
 		guard let dest = segue.destination as? NewPost else { return }
 
 		// pass values to the editor scene
 		dest.trip = trip
-		dest.existingPost = trip?.posts?[indexPath.row] ?? nil
+//		dest.existingPost = trip?.posts?[indexPath.row] ?? nil
 	}
 
     // MARK: - UICollectionViewDataSource
