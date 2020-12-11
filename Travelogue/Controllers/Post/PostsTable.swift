@@ -26,13 +26,24 @@ class PostsTable: UITableViewController {
 	// MARK: - Navigation
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		// creating a new post
 		if (segue.identifier == "newPost") {
-			// set the destination scene
+			// set the destination scene view controller
 			guard let dest = segue.destination as? NewPost else { return }
 			// pass values to the editor scene
 			dest.trip = trip
-		} else {
-			// show post detail scene
+		}
+		// viewing an existing post
+		if (segue.identifier == "postDetail") {
+			// get destination view controller
+			guard let dest = segue.destination as? PostDetail else { return }
+			// get the indexPath for the selected Post object
+			guard let sel = self.postsTable.indexPathForSelectedRow?.row else {
+				return
+			}
+			
+			// pass post data to detail view controller
+			dest.post = posts?[sel]
 		}
 	}
 
