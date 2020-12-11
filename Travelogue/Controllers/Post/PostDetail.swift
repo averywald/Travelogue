@@ -18,10 +18,17 @@ class PostDetail: UIViewController {
     override func viewDidLoad() { super.viewDidLoad() }
     
 	override func viewWillAppear(_ animated: Bool) {
+		// check for media
+		if (post!.hasMedia) {
+			// render the sucker
+			postImageView.image = UIImage(data: (post?.media?[0].data)!) // bad :(
+		}
+		
 		// add post data to UI
 		self.title = post?.name
 		postCaption.text = post?.caption
-		postImageView.image = UIImage(data: (post?.media?[0].data)!) // bad :(
+		
+		
 	}
 
 }

@@ -12,9 +12,12 @@ import CoreData
 @objc(Post)
 public class Post: NSManagedObject {
 	
-	// does post need a media array?
 	var media: [Media]? {
 		return self.postMedia?.array as? [Media]
+	}
+	
+	var hasMedia: Bool {
+		return ((media?.count)! > 0) ? true : false
 	}
 	
 	var trip: Trip? {
