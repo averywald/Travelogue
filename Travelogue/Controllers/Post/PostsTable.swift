@@ -1,64 +1,56 @@
 //
-//  Trips.swift
+//  PostsTable.swift
 //  Travelogue
 //
-//  Created by Avery Wald on 12/9/20.
+//  Created by Avery Wald on 12/11/20.
 //
 
 import UIKit
 import CoreData
 
-class Trips: UITableViewController {
+class PostsTable: UITableViewController {
 	
-	@IBOutlet var tripTableView: UITableView!
-	var trips: [Trip] = []
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-//         self.navigationItem.leftBarButtonItem = self.editButtonItem
-    }
+	@IBOutlet var postsTable: UITableView!
+	
+	var trip: Trip? // chosen trip from previous scene
+	var posts: [Post]? = [] // posts for chosen trip
+	
+	override func viewDidLoad() { super.viewDidLoad() }
 	
 	override func viewWillAppear(_ animated: Bool) {
-		// get app delegate
-		guard let ad = UIApplication.shared.delegate as? AppDelegate else {
-			return
-		}
-		
-		// get managed context
-		let mc = ad.persistentContainer.viewContext
-		
-		// get Category objects from core data persistence
-		let fReq: NSFetchRequest<Trip> = Trip.fetchRequest()
-		
-		do {
-			// get the data from persistence layer
-			trips = try mc.fetch(fReq)
-			
-			// refresh table with new data
-			tripTableView.reloadData()
-		} catch {
-			print("could not fetch categories")
+		posts = (trip?.posts)! as [Post] // retrieve posts for chosen trip
+		self.title = trip?.name // set title with trip name
+		self.postsTable.reloadData() // load data into UI
+	}
+
+	// MARK: - Navigation
+
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if (segue.identifier == "newPost") {
+			// set the destination scene
+			guard let dest = segue.destination as? NewPost else { return }
+			// pass values to the editor scene
+			dest.trip = trip
+		} else {
+			// show post detail scene
 		}
 	}
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-		return 1
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return trips.count
-    }
+		return posts?.count ?? 0
+	}
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tripCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath)
 		
-		// get title
-		cell.textLabel?.text = trips[indexPath.row].name
-		
-		// get metadata
+		// set UI elements
+		cell.textLabel?.text = posts?[indexPath.row].name
 
         return cell
     }

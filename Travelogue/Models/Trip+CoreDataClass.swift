@@ -17,7 +17,7 @@ public class Trip: NSManagedObject {
 		return self.rawPosts?.array as? [Post]
 	}
 	
-	convenience init?(start s: Date?, end e: Date?, location l: String?) {
+	convenience init?(name n: String?, start s: Date?, end e: Date?, location l: String?) {
 		// get app delegate
 		let appDelegate = UIApplication.shared.delegate as? AppDelegate
 		
@@ -30,6 +30,7 @@ public class Trip: NSManagedObject {
 		self.init(entity: Trip.entity(), insertInto: context)
 		
 		// assign values
+		self.name = n
 		self.startDate = s
 		self.endDate = e
 		self.location = l

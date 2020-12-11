@@ -18,8 +18,8 @@ extension Trip {
 
     @NSManaged public var endDate: Date?
     @NSManaged public var location: String?
-    @NSManaged public var startDate: Date?
     @NSManaged public var name: String?
+    @NSManaged public var startDate: Date?
     @NSManaged public var rawPosts: NSOrderedSet?
 
 }
