@@ -42,7 +42,7 @@ class PostsTable: UITableViewController {
 				return
 			}
 			
-			// pass data to detail view controller
+			// pass post data to detail view controller
 			dest.post = posts?[sel]
 		}
 	}
