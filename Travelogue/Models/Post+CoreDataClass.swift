@@ -21,7 +21,7 @@ public class Post: NSManagedObject {
 		return self.postTrip
 	}
 	
-	convenience init?(date d: Date, text t: String?) {
+	convenience init?(name n: String?, caption c: String?) {
 		// get app delegate
 		let appDelegate = UIApplication.shared.delegate as? AppDelegate
 		
@@ -31,11 +31,11 @@ public class Post: NSManagedObject {
 		}
 		
 		// insert into respective Trip's managed context
-		self.init(entity: Trip.entity(), insertInto: context)
+		self.init(entity: Post.entity(), insertInto: context)
 		
 		// assign values
-		self.date = d
-		self.text = t
+		self.name = n
+		self.caption = c
 		
 	}
 

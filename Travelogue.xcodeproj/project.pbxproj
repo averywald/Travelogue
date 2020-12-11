@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC0877E5258283D200BA2B4D /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0877E4258283D200BA2B4D /* Trip+CoreDataClass.swift */; };
+		CC0877EA258290D700BA2B4D /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0877E9258290D700BA2B4D /* Posts.swift */; };
+		CC0877ED258290ED00BA2B4D /* NewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0877EC258290ED00BA2B4D /* NewPost.swift */; };
+		CC2B0DDA258282FD004B11C3 /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B0DD9258282FD004B11C3 /* Trip+CoreDataProperties.swift */; };
 		CC3D0BAD2581A1100044828C /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D0BAC2581A1100044828C /* Trips.swift */; };
 		CC3D0BB42581A4030044828C /* NewTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D0BB32581A4030044828C /* NewTrip.swift */; };
 		CC77360625757A7100BF0D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77360525757A7100BF0D14 /* AppDelegate.swift */; };
@@ -19,11 +23,14 @@
 		CCA1B751257F290E001DD1B7 /* Media+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B74B257F290E001DD1B7 /* Media+CoreDataProperties.swift */; };
 		CCA1B752257F290E001DD1B7 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B74C257F290E001DD1B7 /* Post+CoreDataClass.swift */; };
 		CCA1B753257F290E001DD1B7 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B74D257F290E001DD1B7 /* Post+CoreDataProperties.swift */; };
-		CCACED1A258276C900F0FE9A /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCACED18258276C900F0FE9A /* Trip+CoreDataClass.swift */; };
-		CCACED1B258276C900F0FE9A /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCACED19258276C900F0FE9A /* Trip+CoreDataProperties.swift */; };
+		CCA994D32583E8E000589569 /* PostsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA994D22583E8E000589569 /* PostsTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC0877E4258283D200BA2B4D /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CC0877E9258290D700BA2B4D /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		CC0877EC258290ED00BA2B4D /* NewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPost.swift; sourceTree = "<group>"; };
+		CC2B0DD9258282FD004B11C3 /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CC3D0BAC2581A1100044828C /* Trips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
 		CC3D0BB32581A4030044828C /* NewTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrip.swift; sourceTree = "<group>"; };
 		CC77360225757A7100BF0D14 /* Travelogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,12 +40,12 @@
 		CC77360F25757A7100BF0D14 /* Travelogue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Travelogue.xcdatamodel; sourceTree = "<group>"; };
 		CC77361125757A7500BF0D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC77361425757A7500BF0D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC94D9242583EE2C00DA0595 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CCA1B74A257F290E001DD1B7 /* Media+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Media+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CCA1B74B257F290E001DD1B7 /* Media+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Media+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CCA1B74C257F290E001DD1B7 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CCA1B74D257F290E001DD1B7 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		CCACED18258276C900F0FE9A /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Trip+CoreDataClass.swift"; path = "../../Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
-		CCACED19258276C900F0FE9A /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CCA994D22583E8E000589569 /* PostsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTable.swift; sourceTree = "<group>"; };
 		CCACED2325827A9700F0FE9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,11 +60,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CC3D0BAB2581A0D40044828C /* Controllers */ = {
+		CC0877F12582989200BA2B4D /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				CC0877EC258290ED00BA2B4D /* NewPost.swift */,
+				CC0877E9258290D700BA2B4D /* Posts.swift */,
+				CCA994D22583E8E000589569 /* PostsTable.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		CC0877F22582989A00BA2B4D /* Trip */ = {
 			isa = PBXGroup;
 			children = (
 				CC3D0BB32581A4030044828C /* NewTrip.swift */,
 				CC3D0BAC2581A1100044828C /* Trips.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		CC3D0BAB2581A0D40044828C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC0877F12582989200BA2B4D /* Post */,
+				CC0877F22582989A00BA2B4D /* Trip */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -68,9 +94,10 @@
 				CCA1B74A257F290E001DD1B7 /* Media+CoreDataClass.swift */,
 				CCA1B74B257F290E001DD1B7 /* Media+CoreDataProperties.swift */,
 				CCA1B74C257F290E001DD1B7 /* Post+CoreDataClass.swift */,
+				CC94D9242583EE2C00DA0595 /* Post+CoreDataProperties.swift */,
 				CCA1B74D257F290E001DD1B7 /* Post+CoreDataProperties.swift */,
-				CCACED18258276C900F0FE9A /* Trip+CoreDataClass.swift */,
-				CCACED19258276C900F0FE9A /* Trip+CoreDataProperties.swift */,
+				CC0877E4258283D200BA2B4D /* Trip+CoreDataClass.swift */,
+				CC2B0DD9258282FD004B11C3 /* Trip+CoreDataProperties.swift */,
 				CC77360E25757A7100BF0D14 /* Travelogue.xcdatamodeld */,
 			);
 			path = Models;
@@ -185,17 +212,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0877E5258283D200BA2B4D /* Trip+CoreDataClass.swift in Sources */,
 				CC3D0BAD2581A1100044828C /* Trips.swift in Sources */,
 				CCA1B750257F290E001DD1B7 /* Media+CoreDataClass.swift in Sources */,
+				CC0877ED258290ED00BA2B4D /* NewPost.swift in Sources */,
 				CCA1B753257F290E001DD1B7 /* Post+CoreDataProperties.swift in Sources */,
 				CC77361025757A7100BF0D14 /* Travelogue.xcdatamodeld in Sources */,
 				CCA1B752257F290E001DD1B7 /* Post+CoreDataClass.swift in Sources */,
 				CCA1B751257F290E001DD1B7 /* Media+CoreDataProperties.swift in Sources */,
+				CCA994D32583E8E000589569 /* PostsTable.swift in Sources */,
+				CC0877EA258290D700BA2B4D /* Posts.swift in Sources */,
 				CC3D0BB42581A4030044828C /* NewTrip.swift in Sources */,
-				CCACED1B258276C900F0FE9A /* Trip+CoreDataProperties.swift in Sources */,
 				CC77360625757A7100BF0D14 /* AppDelegate.swift in Sources */,
+				CC2B0DDA258282FD004B11C3 /* Trip+CoreDataProperties.swift in Sources */,
 				CC77360825757A7100BF0D14 /* SceneDelegate.swift in Sources */,
-				CCACED1A258276C900F0FE9A /* Trip+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,7 +40,6 @@ class NewTrip: UIViewController {
 				print("could not save new trip")
 			}
 		}
-
 	}
 
 }

@@ -2,7 +2,7 @@
 //  Post+CoreDataProperties.swift
 //  Travelogue
 //
-//  Created by Avery Wald on 12/10/20.
+//  Created by Avery Wald on 12/11/20.
 //
 //
 
@@ -16,8 +16,8 @@ extension Post {
         return NSFetchRequest<Post>(entityName: "Post")
     }
 
-    @NSManaged public var date: Date?
-    @NSManaged public var text: String?
+    @NSManaged public var caption: String?
+    @NSManaged public var name: String?
     @NSManaged public var postMedia: NSOrderedSet?
     @NSManaged public var postTrip: Trip?
 
