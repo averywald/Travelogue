@@ -86,11 +86,17 @@ class NewPost: UIViewController,
 		let n = name.text
 		let c = caption.text
 		
+		// get image data for BinaryData cast
+		guard let i = imageView.image?.pngData() else {
+			return // prolly fix this ?
+		}
+		
 		// try to create a Trip object from them
-		if let post = Post(name: n, caption: c) {
+		if let post = Post(name: n, caption: c),
+		   let media = Media(data: i, metaData: nil, uri: nil) {
 			
-			// add post to trip context
-			trip?.addToRawPosts(post)
+			post.addToPostMedia(media) // add media to the post context
+			trip?.addToRawPosts(post) // add post to trip context
 			
 			do {
 				// save the new trip attribs

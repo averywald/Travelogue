@@ -22,12 +22,12 @@ public class Media: NSManagedObject {
 		}
 		
 		// insert into its respective Post's managed context
-		self.init(entity: Post.entity(), insertInto: context)
+		self.init(entity: Media.entity(), insertInto: context)
 		
 		// assign values
 		self.data = d
-		self.metaData = md
-		self.uri = u
+//		self.metaData = md
+//		self.uri = u
 		
 	}
 
