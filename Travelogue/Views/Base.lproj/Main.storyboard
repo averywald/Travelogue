@@ -136,7 +136,7 @@
         <!--View Post-->
         <scene sceneID="wiS-su-C7F">
             <objects>
-                <viewController id="fYh-nc-Eov" sceneMemberID="viewController">
+                <viewController id="fYh-nc-Eov" customClass="PostDetail" customModule="Travelogue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jwz-Hv-EJG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,7 +166,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="fYh-nc-Eov" kind="show" id="6Jp-vS-1e4"/>
+                                    <segue destination="fYh-nc-Eov" kind="show" identifier="postDetail" id="6Jp-vS-1e4"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
