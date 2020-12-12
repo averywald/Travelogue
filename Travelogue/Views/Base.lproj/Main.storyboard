@@ -17,60 +17,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Trip Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jf3-Q8-ffb">
-                                <rect key="frame" x="20" y="108" width="374" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="iqO-UK-2WX"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="108" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="78e-jk-Mxa">
-                                <rect key="frame" x="20" y="154" width="374" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="cL5-RC-hi1"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="150" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="End Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KlH-Wi-sUE">
-                                <rect key="frame" x="20" y="200" width="374" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="9HL-DS-mwm"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="192" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="SVQ-Vm-Dey">
-                                <rect key="frame" x="0.0" y="323" width="414" height="162"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="162" id="Skl-fp-xH1"/>
-                                </constraints>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="SVQ-Vm-Dey">
+                                <rect key="frame" x="47" y="323" width="320" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </datePicker>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZLb-6R-RIU">
-                                <rect key="frame" x="0.0" y="553" width="414" height="162"/>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZLb-6R-RIU">
+                                <rect key="frame" x="47" y="548" width="320" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IV8-ps-8AP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="78e-jk-Mxa" firstAttribute="leading" secondItem="KlH-Wi-sUE" secondAttribute="leading" id="2W5-wt-gmg"/>
-                            <constraint firstItem="jf3-Q8-ffb" firstAttribute="leading" secondItem="kaB-23-iVK" secondAttribute="leadingMargin" id="3A7-bg-aju"/>
-                            <constraint firstItem="SVQ-Vm-Dey" firstAttribute="leading" secondItem="IV8-ps-8AP" secondAttribute="leading" id="4tR-f8-km8"/>
-                            <constraint firstItem="jf3-Q8-ffb" firstAttribute="trailing" secondItem="kaB-23-iVK" secondAttribute="trailingMargin" id="5JC-J5-rMS"/>
-                            <constraint firstItem="SVQ-Vm-Dey" firstAttribute="leading" secondItem="ZLb-6R-RIU" secondAttribute="leading" id="8mA-NY-Vzb"/>
-                            <constraint firstItem="78e-jk-Mxa" firstAttribute="top" secondItem="jf3-Q8-ffb" secondAttribute="bottom" constant="8" id="CtG-lH-fmK"/>
-                            <constraint firstItem="ZLb-6R-RIU" firstAttribute="top" secondItem="SVQ-Vm-Dey" secondAttribute="bottom" constant="68" id="Cy2-fC-Gms"/>
-                            <constraint firstItem="78e-jk-Mxa" firstAttribute="leading" secondItem="IV8-ps-8AP" secondAttribute="leading" constant="20" id="KFc-VZ-bWC"/>
-                            <constraint firstItem="KlH-Wi-sUE" firstAttribute="top" secondItem="78e-jk-Mxa" secondAttribute="bottom" constant="8" id="Kyg-PR-h6Y"/>
-                            <constraint firstItem="jf3-Q8-ffb" firstAttribute="top" secondItem="IV8-ps-8AP" secondAttribute="top" constant="20" id="Me2-kT-hIY"/>
-                            <constraint firstItem="78e-jk-Mxa" firstAttribute="trailing" secondItem="KlH-Wi-sUE" secondAttribute="trailing" id="Sgf-0c-sl5"/>
-                            <constraint firstItem="IV8-ps-8AP" firstAttribute="trailing" secondItem="78e-jk-Mxa" secondAttribute="trailing" constant="20" id="a3q-WM-UBf"/>
-                            <constraint firstItem="IV8-ps-8AP" firstAttribute="bottom" secondItem="ZLb-6R-RIU" secondAttribute="bottom" constant="147" id="dOd-Jw-i80"/>
-                            <constraint firstItem="jf3-Q8-ffb" firstAttribute="trailing" secondItem="78e-jk-Mxa" secondAttribute="trailing" id="khv-p7-1MQ"/>
-                            <constraint firstItem="KlH-Wi-sUE" firstAttribute="centerX" secondItem="SVQ-Vm-Dey" secondAttribute="centerX" id="ln7-c4-DBd"/>
-                            <constraint firstItem="SVQ-Vm-Dey" firstAttribute="trailing" secondItem="ZLb-6R-RIU" secondAttribute="trailing" id="nyT-e0-swF"/>
-                            <constraint firstItem="SVQ-Vm-Dey" firstAttribute="top" secondItem="KlH-Wi-sUE" secondAttribute="bottom" constant="85" id="qe2-HO-Uqe"/>
-                            <constraint firstItem="jf3-Q8-ffb" firstAttribute="leading" secondItem="78e-jk-Mxa" secondAttribute="leading" id="rzZ-qb-ThM"/>
+                            <constraint firstItem="KlH-Wi-sUE" firstAttribute="top" secondItem="78e-jk-Mxa" secondAttribute="bottom" constant="8" symbolic="YES" id="4wF-Dr-27d"/>
+                            <constraint firstItem="jf3-Q8-ffb" firstAttribute="leading" secondItem="IV8-ps-8AP" secondAttribute="leading" constant="20" id="9DM-PY-xZh"/>
+                            <constraint firstItem="IV8-ps-8AP" firstAttribute="trailing" secondItem="78e-jk-Mxa" secondAttribute="trailing" constant="20" id="Gx3-jK-Osg"/>
+                            <constraint firstItem="KlH-Wi-sUE" firstAttribute="leading" secondItem="IV8-ps-8AP" secondAttribute="leading" constant="20" id="XtA-Sv-1oL"/>
+                            <constraint firstItem="78e-jk-Mxa" firstAttribute="top" secondItem="jf3-Q8-ffb" secondAttribute="bottom" constant="8" symbolic="YES" id="c73-G8-VFz"/>
+                            <constraint firstItem="78e-jk-Mxa" firstAttribute="leading" secondItem="IV8-ps-8AP" secondAttribute="leading" constant="20" id="cmy-5X-2KV"/>
+                            <constraint firstItem="jf3-Q8-ffb" firstAttribute="top" secondItem="IV8-ps-8AP" secondAttribute="top" constant="20" id="sKG-hS-yo5"/>
+                            <constraint firstItem="IV8-ps-8AP" firstAttribute="trailing" secondItem="KlH-Wi-sUE" secondAttribute="trailing" constant="20" id="xom-Sp-3ec"/>
+                            <constraint firstItem="IV8-ps-8AP" firstAttribute="trailing" secondItem="jf3-Q8-ffb" secondAttribute="trailing" constant="20" id="zYI-y9-Kce"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Create A New Trip" id="DxK-5z-sEM">
@@ -90,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8y-48-sPu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1236" y="86"/>
+            <point key="canvasLocation" x="1234.7826086956522" y="85.714285714285708"/>
         </scene>
         <!--Trips-->
         <scene sceneID="W58-Cg-zAS">
@@ -102,14 +83,29 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tripCell" id="MBW-WO-Q7a">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MBW-WO-Q7a" id="ERA-jR-vdy">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Psa-fH-c10">
+                                            <rect key="frame" x="356" y="6" width="30" height="30.5"/>
+                                            <state key="normal" title="Edit"/>
+                                            <connections>
+                                                <segue destination="FOm-1K-lEO" kind="show" identifier="editTrip" id="aRQ-Da-3vy"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Psa-fH-c10" secondAttribute="bottom" constant="7.5" id="5J0-v2-O5J"/>
+                                        <constraint firstItem="Psa-fH-c10" firstAttribute="top" secondItem="ERA-jR-vdy" secondAttribute="top" constant="6" id="Eno-aX-YLd"/>
+                                        <constraint firstItem="Psa-fH-c10" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ERA-jR-vdy" secondAttribute="leading" constant="20" symbolic="YES" id="Kze-sc-gMp"/>
+                                        <constraint firstAttribute="trailing" secondItem="Psa-fH-c10" secondAttribute="trailing" constant="28" id="v1n-9M-pK5"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="UcI-Wz-8pB" kind="show" id="Rpw-zt-Wid"/>
+                                    <segue destination="UcI-Wz-8pB" kind="show" identifier="tripPosts" id="Rpw-zt-Wid"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -121,7 +117,7 @@
                     <navigationItem key="navigationItem" title="Trips" id="jWj-An-aZ5">
                         <barButtonItem key="rightBarButtonItem" title="New" id="btM-un-3JZ">
                             <connections>
-                                <segue destination="FOm-1K-lEO" kind="show" id="8cK-2D-Tno"/>
+                                <segue destination="FOm-1K-lEO" kind="show" identifier="newTrip" id="8cK-2D-Tno"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -317,6 +313,9 @@
             <point key="canvasLocation" x="338" y="-645"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="aRQ-Da-3vy"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
