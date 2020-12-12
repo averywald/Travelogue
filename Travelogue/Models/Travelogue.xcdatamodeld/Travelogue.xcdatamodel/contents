@@ -4,13 +4,13 @@
         <attribute name="data" optional="YES" attributeType="Binary"/>
         <attribute name="metaData" optional="YES" attributeType="String"/>
         <attribute name="uri" optional="YES" attributeType="URI"/>
-        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="postMedia" inverseEntity="Post"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Post" inverseName="postMedia" inverseEntity="Post"/>
     </entity>
     <entity name="Post" representedClassName="Post" syncable="YES">
         <attribute name="caption" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <relationship name="postMedia" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Media" inverseName="post" inverseEntity="Media"/>
-        <relationship name="postTrip" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Trip" inverseName="rawPosts" inverseEntity="Trip"/>
+        <relationship name="postTrip" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Trip" inverseName="rawPosts" inverseEntity="Trip"/>
     </entity>
     <entity name="Trip" representedClassName="Trip" syncable="YES">
         <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>

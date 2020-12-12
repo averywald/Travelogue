@@ -33,7 +33,9 @@ class Trips: UITableViewController {
 			
 			// refresh table with new data
 			tripTableView.reloadData()
-		} catch { print("could not fetch trips") }
+		} catch {
+			print("could not fetch trips")
+		}
 	}
 	
 	// MARK: - Methods
@@ -50,7 +52,9 @@ class Trips: UITableViewController {
 			try context.save() // save the newly updated core data context
 			trips.remove(at: indexPath.row) // remove the row from the class
 			tripTableView.deleteRows(at: [indexPath], with: .fade) // update UI
-		} catch { print("could not delete document") }
+		} catch {
+			print("could not delete trip")
+		}
 		
 		tripTableView.reloadData() // update the UI data to reflect core data
 	}
