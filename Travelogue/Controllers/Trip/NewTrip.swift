@@ -15,30 +15,45 @@ class NewTrip: UIViewController {
 	@IBOutlet weak var endLoc: UITextField!
 	@IBOutlet weak var endDate: UIDatePicker!
 	
-	override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+	var mode: String = "new" // hack way to track status
+	var existingTrip: Trip?
+	let mc = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+	
+	override func viewDidLoad() { super.viewDidLoad() }
+	
+	override func viewWillAppear(_ animated: Bool) {
+		// if editing a trip object
+		if (existingTrip != nil) {
+			self.title = "Edit Trip" // set page title
+			self.mode = "edit" // change to edit mode
+			
+			// assign its values to the UI elements
+			name.text = existingTrip?.name
+			startLoc.text = existingTrip?.location
+			// need end loc in model ??
+			startDate.date = (existingTrip?.startDate)!
+			endDate.date = (existingTrip?.endDate)!
+		}
+	}
     
 	@IBAction func save(_ sender: Any) {
 		// get all the new category attribs
 		let n = name.text
 		let s = startLoc.text
-//		let e = endLoc.text
+		let d = startDate.date
+		let e = endDate.date
 		
 		// try to create a Trip object from them
-		if let trip = Trip(name: n, start: startDate.date, end: endDate.date, location: s) {
-			do {
-				// save the new trip attribs
-				try trip.managedObjectContext?.save()
-				
-				// redirect back to trip list
-				self.navigationController?.popViewController(animated: true)
-				
-			} catch {
-				print("could not save new trip")
+		if let trip = Trip(name: n, start: d, end: e, location: s) {
+			if (mode == "edit") {
+				do { try mc?.save() }
+				catch { print("could not update trip") }
+			} else {
+				do { try trip.managedObjectContext?.save() }
+				catch { print("could not save new trip") }
 			}
+			// redirect back to trip list
+			self.navigationController?.popViewController(animated: true)
 		}
 	}
 

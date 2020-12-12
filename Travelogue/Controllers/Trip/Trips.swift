@@ -62,14 +62,22 @@ class Trips: UITableViewController {
 	// MARK: - Navigation
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		// get the destination scene, cast as Posts controller
-		guard let dest = segue.destination as? PostsTable else { return }
-		// get the indexPath for the selected trip item
-		guard let sel = self.tripTableView.indexPathForSelectedRow?.row else {
-			return
+		if (segue.identifier == "tripPosts") {
+			// get the destination scene, cast as Posts controller
+			guard let dest = segue.destination as? PostsTable,
+				  let sel = self.tripTableView.indexPathForSelectedRow?.row else { return }
+			dest.trip = trips[sel] // pass trip data to the post view controller
 		}
-		
-		dest.trip = trips[sel] // pass trip data to the post view controller
+		if (segue.identifier == "editTrip") {
+			// get the destination scene, cast as Posts controller
+			guard let dest = segue.destination as? NewTrip else { return }
+			
+			// hack way of getting the indexPath instead of creating a custom tableViewCell
+			let sel = (sender as? UIButton)?.parentFocusEnvironment?.parentFocusEnvironment
+			let indexPath = tripTableView.indexPath(for: (sel as? UITableViewCell)!)
+			
+			dest.existingTrip = trips[indexPath!.row] // pass trip data to the post view controller
+		}
 	}
 
     // MARK: - Table view data source
@@ -83,14 +91,11 @@ class Trips: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tripCell", for: indexPath)
+		let cell = tableView.dequeueReusableCell(withIdentifier: "tripCell", for: indexPath)
 		
 		// get title
 		cell.textLabel?.text = trips[indexPath.row].name
-		
-		// get metadata
-
-        return cell
+		return cell
     }
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -98,7 +103,5 @@ class Trips: UITableViewController {
 			self.deleteTrip(indexPath: indexPath) // delete the row from the data source
         }
     }
-
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {}
 
 }
